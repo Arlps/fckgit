@@ -1,10 +1,52 @@
+/*辅助类*/
+.action{
+	opacity: 0;
+}
+.iconfix{
+	vertical-align: top;
+	font-size: 20px;
+}
+.frame{
+	border: 1px solid #BCA053; margin-top: 20px;
+	padding: 20px; background: url(../img/bg1.jpg) no-repeat;
+	background-size: cover;
+}
+.horizonl-padder{
+	padding: 0 10px; 
+}
+.hidden{
+	display: none;
+}
+.block{
+	margin-bottom: 15px;
+}
+.col-xs-4{
+	width: 33.33333333333%;float: left;position: relative;
+	min-height: 1px; padding-left: 15px; padding-right: 15px;
+}
+p{ 
+	margin-bottom: 10px; font-size: 14px; line-height: 20px;
+}
+dl{ 
+	margin-bottom: 20px;
+}
+*{
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+
+
 @media only screen and (min-width:980px ) {
 	body{
 		width:980px; margin: 0 auto;
 	}
 }
 body{
-	background:rgba(0,0,0,0.9);color: #ccc;
+	background:rgba(0,0,0,0.85);
+	color: #ccc;
+	background: url(../img/bg3.jpg) no-repeat;
+	background-size: 100% 100%;
 }
 .goUp{
 	position: fixed; right: 10px; bottom: 20px; 
@@ -28,40 +70,24 @@ body{
 	height: 50px;
 }
 
-/*owl-carousel 弃用*/
-#main-carousel .owl-item a {
-	background-position: center center; background-size: auto 100%; display: block; padding-top: 39%;
-}
-#main-carousel{
-	position: relative;
-}
-#main-carousel .owl-dots{
-	position: absolute; bottom: 0px; width: 100%;
-}
-#main-carousel .owl-dots .owl-dot.active span{
-	background: #fff!important; -webkit-transform: scale(1.2)!important; transform: scale(1.2)!important;
-}
-#main-carousel .owl-dots .owl-dot span{
-	width: 25px; height: 5px; border-radius: 5px; background: rgba(255,255,255,0.2);
-}
-#main-carousel .owl-dots .owl-dot.active span{
-	background: #019A1D!important; -webkit-transform: scale(1.1)!important; transform: scale(1.1)!important;-webkit-box-shadow: 0 0 0px #fff;box-shadow: 0 0 0px #fff;
-}
 
 /*==swiper替换=============================================*/
 #main-swiper .swiper-slide>a{
-	background-position: center center; background-size: auto 100%; display: block; padding-top: 39%;
+	display: inline-block; width: 100%;
+}
+#main-swiper .swiper-slide a img{
+	width: 100%;
 }
 #main-swiper .swiper-pagination-bullet{
-	width: 25px; height: 5px; border-radius: 5px; background: rgba(255,255,255,0.5);
+	width: 25px; height: 5px; border-radius: 5px; background: rgba(255,255,255,0.5); opacity: 0.9;
 }
 #main-swiper .swiper-pagination-bullet-active{
-	background: #019A1D!important; -webkit-transform: scale(1.1)!important; transform: scale(1.1)!important;-webkit-box-shadow: 0 0 0px #fff;box-shadow: 0 0 0px #fff;
+	background: #019A1D!important; -webkit-transform: scale(1.1)!important; -ms-transform: scale(1.1)!important; transform: scale(1.1)!important;-webkit-box-shadow: 0 0 0px #fff;box-shadow: 0 0 0px #fff;
 }
 
 /*标题*/
 .title{
-	margin-top: 30px; overflow: hidden; opacity: 0.95;
+	overflow: hidden; opacity: 0.95;
 }
 .main-title{
 	text-align: center; height: 50px; line-height: 50px; font-size: 20px; padding: 0;color: #DBB85C;
@@ -75,7 +101,7 @@ body{
 	background-size:contain; background-origin: content-box;
 }
 .introduce{
-	text-indent: 30px; color: #bbb; font-size: 15px; padding: 0 30px;
+	text-indent: 30px; color: #bbb; font-size: 15px; padding: 0 30px; line-height: 20px;
 }
 
 
@@ -87,27 +113,30 @@ body{
 	/*background: url(../img/bg1.jpg);*/
 }
 #show-swiper.swiper-container {
-  width: 300px; height: 300px; margin: 0 auto;
+  width: 350px; height: 350px; margin: -20px auto; padding: 40px;
 }
 #show-swiper .swiper-slide {
   background-position: center; background-size: cover;
-  /*border-radius: 50%; overflow: hidden;*/
+  border-radius: 50%;
+  border: 2px solid #DCB345;
+  border: 2px solid rgba(220,180,70,0.7) ;
 }
+
 #show-swiper .swiper-pagination-bullet{
 	width: 16px; border-radius: 4px; background: rgba(255,255,255,0.4);
 }
 #show-swiper .swiper-pagination-bullet-active{
-	background: rgba(255,255,255,0.5); -webkit-transform: scale(1.1)!important; transform: scale(1.1)!important;-webkit-box-shadow: 0 0 2px #fff;box-shadow: 0 0 2px #fff;
+	background: rgba(255,255,255,0.5); -webkit-transform: scale(1.1)!important; -ms-transform: scale(1.1)!important; transform: scale(1.1)!important;-webkit-box-shadow: 0 0 2px #fff;box-shadow: 0 0 2px #fff;
 }
 #show-swiper .swiper-button-next,.swiper-button-prev{
 	color: #DFBC5F;
 	background-size: contain!important;
 }
 #show-swiper .swiper-button-next{
-	background: url(img/rightArrow.png) no-repeat center center;right: -15px;
+	background: url(img/rightArrow.png) no-repeat center center;right: 0px;
 }
 #show-swiper .swiper-button-prev{
-	background: url(img/leftArrow.png) no-repeat center center; left: -15px;
+	background: url(img/leftArrow.png) no-repeat center center; left: 0px;
 }
 
 .show-list{
@@ -125,7 +154,7 @@ body{
            box-shadow: 3px 3px 10px #000;
 }
 .show-box .img-wrap{
-	text-align: center; padding: 20px;border-bottom: 1px solid #BCA053;
+	text-align: center; padding: 20px;
 	background: rgba(0,128,27,0.25);
 	/*border-bottom: 1px solid RGBA(255,255,255,0.4);*/
 	background: url(../img/bg1.jpg); background-size: cover;
@@ -142,13 +171,21 @@ body{
 /*直播相关*/
 .online-wrap>li{
 	/*margin-bottom: 20px;*/
-	padding: 20px 0; background: rgba(255,255,255,0.05);
+	padding: 20px 0; background: rgba(255,255,255,0);
 }
 .online-spot{
-	text-align: center;
+	text-align: center; position: relative;
 }
 .online-spot>img{
 	 border: 5px solid rgba(255,255,255,0.8);
+}
+.online-spot .online-spot-btn{
+	position: absolute; bottom: 30px; left: 5%; width: 100px; height: 30px;
+	line-height: 30px; color: #fff; text-align: center;
+	border-radius: 4px; font-size: 14px; 
+	background: rgba(255,255,255,0.4); 
+	background: #228B37;
+	background: rgba(34,139,55,0.7);
 }
 .online-link{
 	position: relative;
@@ -167,28 +204,16 @@ body{
 .online-code p{
 	margin: 5px 0;
 }
-
-.footer{
-	height: 50px;
+.alink>a{
+	color: #DBB85C;
 }
 
+#xxx img{ width: 100%;}
 
 
-/*辅助类*/
-.action{
-	opacity: 0;
+.hoster{
+	text-align: center;
 }
-.iconfix{
-	vertical-align: top;
-	font-size: 20px;
-}
-.frame{
-	border: 1px solid #BCA053; margin-top: 20px;
-	padding: 20px; background: url(../img/bg1.jpg) no-repeat;
-	background-size: cover;
-}
-.horizonl-padder{
-	padding: 0 10px;
-}
-p{ margin-bottom: 10px;}
-dl{ margin-bottom: 20px;}
+
+
+
