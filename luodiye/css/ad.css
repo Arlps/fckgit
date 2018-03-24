@@ -1,0 +1,125 @@
+/*辅助类*/
+p{ 
+	margin-bottom: 10px; font-size: 14px; line-height: 20px;
+}
+dl{ 
+	margin-bottom: 20px;
+}
+*{
+	box-sizing: border-box;
+}
+a[href]{
+	color:#DBB85C;
+}
+.action{
+	/*opacity: 0;*/
+}
+.iconfix{
+	vertical-align: top;
+	font-size: 20px;
+}
+.frame{
+	border: 1px solid #BCA053;
+	padding: 20px; background: url(../img/bg1.jpg) no-repeat;
+	background-size: cover;
+}
+.main{
+	width: 100%; height: 100%;position: relative;
+}
+.horizonl-padder{
+	padding: 0 10px; 
+}
+.hidden{
+	display: none;
+}
+.block{
+	margin-bottom: 15px;
+}
+.col-xs-4{
+	width: 33.33333333333%;float: left;position: relative;
+	min-height: 1px; padding-left: 15px; padding-right: 15px;
+}
+.pos{
+	position: absolute;
+}
+.flex{
+	display: flex; justify-content: center;
+}
+.flex.vertical{
+	align-items: center;
+}
+.cls{
+	border: none; background: none; box-shadow: none;
+}
+.para{
+	font-size: 16px; line-height: 28px;font-weight: bold;
+	/*color: #20B414;*/
+	text-shadow: 0 1px 2px rgba(0,0,0,0.5)
+}
+.indent{
+	text-indent: 32px;
+}
+html, body {
+	position: relative; height: 100%;color: #ccc;
+}
+.swiper-container {
+	width: 100%; height: 100%;
+}
+.swiper-pagination-bullet{
+	width: 2px; height: 15px; border-radius: 5px; background: rgba(255,255,255,0.5); opacity: 0.5;
+}
+.swiper-pagination-bullet-active{
+	background: #019A1D!important; transform: scale(1.1)!important;box-shadow: 0 0 0px #fff;
+}
+
+/*111111111111111111111111111111111111111111*/
+.first{
+	background: url(../img/main.png) no-repeat; background-size: 100% 100%;
+}
+.first .hoster{
+	bottom: 15%; text-align: center; 
+}
+.first .single1{
+	bottom: 4%; right: 5%; width: 150px; height: 150px; opacity: 0.8;
+	background: url(../img/single.png) no-repeat; background-size:100% 100% ;
+}
+.first .link{
+	display: inline-block; background: rgba(255,255,255,0); 
+	width: 23%; height: 7%; z-index: 1; top: 47%; left: 30%;
+}
+/*222222222222222222222222222222222222222222222*/
+.second{
+	background: url(../img/bg3.jpg) no-repeat; background-size: cover;
+}
+.second .logo{
+	left: 5%;
+}
+.second .spot1{
+	top:12%; width: 60%; border: 4px solid rgba(255,255,255,0.5);
+}
+.second .spot2{
+	bottom:6%; width: 60%; border: 4px solid rgba(255,255,255,0.5);
+}
+.second .entrance{
+	top: 49%;
+}
+.second .entrance>a{
+	display: inline-block;
+}
+
+/*33333333333333333333333333333333333333*/
+.third{
+	background: url(../img/bg3.jpg) no-repeat; background-size: cover;
+}
+.third .logo{
+	left: 5%;
+}
+.third .introduce{
+	top:10%;
+}
+.third .code{
+	top: 50%; text-align: center;
+}
+.third .code img{
+	margin-bottom: 10px;
+}
