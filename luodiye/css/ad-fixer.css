@@ -44,8 +44,9 @@ a[href]{
 	position: absolute;
 }
 .flex{
+	display: -webkit-flex;
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -ms-flexbox; 
 	display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center;
 }
 .flex.vertical{
