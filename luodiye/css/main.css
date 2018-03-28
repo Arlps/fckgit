@@ -1,0 +1,271 @@
+/*辅助类*/
+.action{
+	/*opacity: 0;*/
+}
+.iconfix{
+	vertical-align: top;
+	font-size: 20px;
+}
+.frame{
+	border: 1px solid #BCA053; margin-top: 20px;
+	padding: 20px; background: url(../img/bg2.jpg) no-repeat;
+	background-size: cover;
+	
+	border: 0px solid #BCA053; margin-top: 20px;
+	padding: 20px; background: url(../img/bg-gold.png) no-repeat;
+	background-size: 100% 100%;
+}
+.frame p{
+	line-height: 26px;
+}
+.frame p:last-child{
+	margin-bottom: 0;
+}
+.frame.full{
+	padding: 15px 40px;
+}
+.frame.full p{
+	text-indent: 32px;
+}
+.horizonl-padder{
+	padding: 0 20px; 
+}
+.hidden{
+	display: none;
+}
+.block{
+	margin-bottom: 15px;
+}
+.col-xs-4{
+	width: 33.33333333333%;float: left;position: relative;
+	min-height: 1px; padding-left: 15px; padding-right: 15px;
+}
+.rlt{
+	position: relative;
+}
+.asl{
+	position: absolute;
+}
+.txt-center{
+	text-align: center;
+}
+.mb20{
+	margin-bottom: 20px;
+}
+.block{
+	display: block;
+}
+.padder-column{
+	padding: 10px 0;
+}
+p{ 
+	margin-bottom: 10px; font-size: 14px; line-height: 20px;
+}
+dl{ 
+	margin-bottom: 20px;
+}
+*{
+	box-sizing: border-box;
+}
+
+
+
+@media only screen and (min-width:980px ) {
+	body{
+		width:980px; margin: 0 auto;
+	}
+}
+body{
+	background:rgba(0,0,0,0.85);
+	color: #ccc;
+	background: url(../img/bg4.jpg) no-repeat;
+	/*background: #000;*/
+	background-size: 100% 100%;
+}
+.goUp{
+	position: fixed; right: 10px; bottom: 20px; 
+	width: 30px; height: 30px; line-height: 26px;
+	text-align: center; background: rgba(255,255,255,0.2);
+	color: #fff; font-size: 26px;z-index:1000; 
+	display: none;
+}
+
+.header {
+	background: #141414; background: url(../img/bg1.jpg) no-repeat; background-size: 100% 100%;
+	border-bottom: 2px solid #02641B;
+	border-bottom: 2px solid #BCA053;
+}
+
+.header .brand {
+	padding: 5px 10px;text-align: center;
+}
+
+.header .logo img {
+	height: 50px;
+}
+
+/*标题*/
+.title{
+	overflow: hidden; opacity: 0.95; margin-bottom: 15px;
+}
+.main-title{
+	text-align: center; height: 50px; line-height: 50px; font-size: 20px; 
+	padding: 0;color: #DBB85C; font-weight: bold;
+}
+.left-arrow{
+	background: url(img/l.png) no-repeat right center; height: 50px; 
+	background-size:contain; background-origin: content-box;
+	padding-right: 0;
+}
+.right-arrow{
+	background: url(img/r.png) no-repeat left center;height: 50px; 
+	background-size:contain; background-origin: content-box;
+	padding-left: 0;
+}
+
+/*banner*/
+.head-title{
+	width: 80%; height: 100px; margin: auto; left: 0; right: 0;
+	border: 5px solid rgba(211,135,0,.3); border:5px solid rgba(34,139,55,0.3);
+	bottom: -85px; text-align: center; padding: 4px; margin-top: 30px;
+}
+.head-title-inner{
+	height: 100%; width: 100%;
+	background: rgba(34,139,55,0.5); padding: 0 5px;
+}
+.head-title-inner p{
+	line-height: 40px; font-size: 20px;  margin: 0;
+}
+.head-title-inner p:first-child{
+	font-size: 27px; line-height: 50px; font-weight: bold; text-align: left;
+	font-family:SimHei;
+}
+.head-title-inner p:last-child{
+	font-size: 18px; line-height: 25px;text-align: right;
+	text-decoration: underline;
+	/*font-style: italic;*/
+}
+
+/*直播*/
+.info .introduce{
+	color: #ccc;  padding: 0 8%; 
+	 z-index: 2; 
+}
+.info .introduce p{
+	line-height: 20px;;font-size: 15px;
+	/*font-weight: bold;*/ 
+	margin-bottom: 10px;
+}
+.info .introduce-img{
+	width: 140px; right: 20px; top:0px ;z-index: -1; opacity: 0.8;
+}
+.space{
+	padding: 0 10px; display: inline-block;
+}
+
+/*公司*/
+.town img{
+	width: 80%; margin-left: 5%;
+}
+.town .para{
+	
+	right: 17px;bottom: 30px;
+}
+.team img{
+	width: 45%;  margin-left: 45%;
+}
+.team .para{
+	left: 30px;bottom: 35px; 
+}
+
+
+.para{
+	padding: 5px 5px;background:rgba(34,139,55,0.5); color: #eee;
+	font-weight: bold; text-align: center; 
+	box-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+.para.left{
+	border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.para.right{
+	border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.para p{
+	margin: 8px; font-weight: normal;
+	line-height: 20px; font-size: 16px;
+}
+
+
+.ad-title{ margin: 10px 0;}
+
+.ad-title p{
+	margin: 0; padding: 5px; text-align: center; font-size: 18px; 
+	 color: #DBB85C;
+}
+.ad-title.mix p{
+	color: #ccc; font-size: 16px;
+}
+.ad-title.mix .point{
+	color: #DBB85C; font-size: 18px; padding: 0 2px; font-weight: bold;
+}
+
+
+
+
+/*直播相关*/
+.online-wrap>li{
+	/*margin-bottom: 20px;*/
+	/*padding: 20px 0;*/ 
+	background: rgba(255,255,255,0);
+}
+.online-spot{
+	text-align: center; position: relative; padding: 0;
+}
+.online-spot>img{
+	 /*border: 5px solid rgba(255,255,255,0.8);*/
+}
+.online-spot .online-spot-btn{
+	position: absolute; bottom: 27%; left: 50%; width: 100px; height: 30px;
+	margin-left: -50px;
+	line-height: 30px; color: #fff; text-align: center;
+	border-radius: 4px; font-size: 14px; 
+	background: rgba(255,255,255,0.4); 
+	background: #228B37;
+	background: rgba(34,139,55,0.7);
+}
+.online-link{
+	position: relative;
+}
+.online-link .online-link-btn{
+	position: absolute; bottom: 30px; left: 5%; width: 100px; height: 30px;
+	line-height: 30px; color: #fff; text-align: center;
+	border-radius: 4px; font-size: 14px; 
+	background: rgba(255,255,255,0.4); 
+	background: #228B37;
+	background: rgba(34,139,55,0.7);
+}
+.online-code{
+	text-align: center;
+}
+.online-code p{
+	margin: 5px 0; margin-top: 10px;
+}
+.alink>a{
+	color: #fff;
+    padding: 5px 10px;
+    background: rgba(34,139,55,0.4);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(255,255,255,0.15) inset;
+}
+
+#xxx img{ width: 100%;}
+
+
+.hoster{
+	text-align: center;
+}
+
+
+
