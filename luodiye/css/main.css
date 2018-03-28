@@ -81,6 +81,8 @@ body{
 	background: url(../img/bg4.jpg) no-repeat;
 	/*background: #000;*/
 	background-size: 100% 100%;
+	/*background: #F7F2EC;
+	background: #E3D8C8;*/
 }
 .goUp{
 	position: fixed; right: 10px; bottom: 20px; 
