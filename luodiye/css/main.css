@@ -1,6 +1,6 @@
 /*辅助类*/
 .action{
-	/*opacity: 0;*/
+	opacity: 0;
 }
 .iconfix{
 	vertical-align: top;
@@ -58,6 +58,15 @@
 .padder-column{
 	padding: 10px 0;
 }
+.head-letter{
+	font-size: 18px; 
+	/*font-weight: bold;*/ 
+	color: #419D41;
+	padding-right: 1px; 
+	/*font-family: KaiTi;*/
+	text-shadow: 0 0 2px rgba(34,139,55,0.7);
+	margin-left: -10px;
+}
 p{ 
 	margin-bottom: 10px; font-size: 14px; line-height: 20px;
 }
@@ -78,11 +87,12 @@ dl{
 body{
 	background:rgba(0,0,0,0.85);
 	color: #ccc;
+	background: #F7F2EC;
 	background: url(../img/bg4.jpg) no-repeat;
 	/*background: #000;*/
 	background-size: 100% 100%;
-	/*background: #F7F2EC;
-	background: #E3D8C8;*/
+	/*background: #F7F2EC;*/
+	/*width: 100%; overflow: hidden;*/
 }
 .goUp{
 	position: fixed; right: 10px; bottom: 20px; 
@@ -154,12 +164,12 @@ body{
 	 z-index: 2; 
 }
 .info .introduce p{
-	line-height: 20px;;font-size: 15px;
+	line-height: 20px;;font-size: 14px;
 	/*font-weight: bold;*/ 
 	margin-bottom: 10px;
 }
 .info .introduce-img{
-	width: 140px; right: 20px; top:0px ;z-index: -1; opacity: 0.8;
+	width: 140px; right: 7%; top:0px ;z-index: -1; opacity: 0.8;
 }
 .space{
 	padding: 0 10px; display: inline-block;
@@ -271,3 +281,10 @@ body{
 
 
 
+/*body{background: #F7F2EC;color: #333;background: url(../img/bg-light.png);background-size: 100% 100%;}
+.info .introduce{ color: #333;}
+.ad-title.mix p{ color: #333;}
+.frame p{ color: #666;}
+.frame{background: url(../img/bg-gold-light.png);
+	background-size: 100% 100%;
+}*/
