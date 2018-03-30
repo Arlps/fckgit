@@ -84,6 +84,9 @@ dl{
 		width:980px; margin: 0 auto;
 	}
 }
+html{
+	width: 100%; overflow-x: hidden;
+}
 body{
 	background:rgba(0,0,0,0.85);
 	color: #ccc;
@@ -92,7 +95,8 @@ body{
 	/*background: #000;*/
 	background-size: 100% 100%;
 	/*background: #F7F2EC;*/
-	/*width: 100%; overflow: hidden;*/
+	width: 100%; overflow-x: hidden;
+	
 }
 .goUp{
 	position: fixed; right: 10px; bottom: 20px; 
@@ -210,21 +214,44 @@ body{
 }
 
 
-.ad-title{ margin: 10px 0;}
+.ad-title{ 
+	width:80%; margin: 10px 10%; 
+}
 
 .ad-title p{
 	margin: 0; padding: 5px; text-align: center; font-size: 18px; 
-	 color: #DBB85C;
+	color: #DBB85C;
 }
 .ad-title.mix p{
-	color: #ccc; font-size: 16px;
+	color: #ccc; font-size: 14px;
 }
 .ad-title.mix .point{
-	color: #DBB85C; font-size: 18px; padding: 0 2px; font-weight: bold;
+	color: #DBB85C; font-size: 16px; padding: 0 2px; font-weight: bold;
 }
 
-
-
+.combine{
+	padding: 25px 0;
+}
+.combine:nth-child(odd){
+	background-color: rgba(34,139,55,0.12);
+}
+.combine:nth-child(even){
+	background-color: rgba(34,139,55,0.0);
+}
+.combine .ad-title{
+	margin-top: 0px; margin-bottom: 0px;
+	background-image: url(../img/line3.png); 
+	background-size: 100% 100%;
+	/*background-color: rgba(255,255,255,0.05);*/
+	padding: 20px 10px;
+	margin-top: -10px;
+}
+.combine .ad-title.mix p{
+	font-size: 14px;padding: 0; line-height: 22px;
+}
+.combine .ad-title.mix .point{
+	font-size: 14px;
+}
 
 /*直播相关*/
 .online-wrap>li{
