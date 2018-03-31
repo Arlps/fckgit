@@ -7,7 +7,6 @@
 		<title>元合玉翡翠直播</title>
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/fonts/iconfont.css" />
-		<link rel="stylesheet" href="css/swiper.min.css" />
 		<link rel="stylesheet" href="css/animate.css" />
 		<link rel="stylesheet" href="css/main.css" />
 	</head>
@@ -19,13 +18,13 @@
 						<img src="img/logo.png" alt="" />
 					</a>
 				</div>
-			</div>
+			</div> 
 		</div>
 		<div class="content">
 			<!--banner-->
 			<div class="block banner rlt">
-				<a href="https://h5.m.taobao.com/taolive/video.html?spm=2013.1.0.0.7b7a6f82z6WqmL&userId=1086220939&id=200585411685" class="block action" data-animate="fadeIn" data-delay="0s">
-					<img src="img/banner.jpg" width="100%" />
+				<a class="goto-url1" href="https://h5.m.taobao.com/taolive/video.html?spm=2013.1.0.0.7b7a6f82z6WqmL&userId=1086220939&id=200585411685" class="block action" data-animate="fadeIn" data-delay="0s">
+					<img class="" src="img/banner.jpg" width="100%" />
 				</a>
 				<div class="head-title txt-center action hidden" data-animate="slideInUp" data-delay="0.1s">
 					<div class="head-title-inner">
@@ -108,7 +107,7 @@
 					<ul class="online-wrap">
 						<li class="online-spot action" data-animate="zoomIn" data-delay="0.2s">
 							<img src="img/spot.png" / width="80%" height="80%" style="margin-top: 20px;">
-							<a class="online-spot-btn action infinite" data-animate="pulse" data-delay="1s" href="https://pages.tmall.com/wow/mt/act/live-pre?wh_weex=true&feedId=200575267747">
+							<a class="online-spot-btn action infinite goto-url1" data-animate="pulse" data-delay="1s" href="https://pages.tmall.com/wow/mt/act/live-pre?wh_weex=true&feedId=200575267747">
 								<span>立即进入&nbsp;<i class="icon iconfont iconfix">&#xe6d6;</i></span>
 							</a>
 						</li>
@@ -149,7 +148,7 @@
 			<div class="block">
 				<div class="online-link action" data-animate="zoomIn" data-delay="0.2s">
 					<img src="img/cross3.jpg" / width="100%">
-					<a class="online-link-btn action infinite" data-animate="pulse" data-delay="1s" href="https://pages.tmall.com/wow/mt/act/live-pre?wh_weex=true&feedId=200575267747">
+					<a class="online-link-btn action infinite goto-url1" data-animate="pulse" data-delay="1s" href="https://pages.tmall.com/wow/mt/act/live-pre?wh_weex=true&feedId=200575267747">
 						<span>立即进入&nbsp;<i class="icon iconfont iconfix">&#xe6d6;</i></span>
 					</a>
 				</div>
@@ -162,9 +161,9 @@
 					<p class="action" data-animate="fadeInRight" data-delay="0.4s">每天12点准时开播</p>
 					<p class="action" data-animate="fadeInRight" data-delay="0.6s">上万好货 每天不重复直播</p>
 					<p class="alink action" data-animate="fadeInRight" data-delay="0.8s">
-						<a href="https://pages.tmall.com/wow/mt/act/live-pre?wh_weex=true&feedId=200576554184">一号直播间入口</a>
+						<a class="goto-url1" href="#">一号直播间入口</a>
 						<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-						<a href="https://pages.tmall.com/wow/mt/act/live-pre?wh_weex=true&feedId=200572660794">二号直播间入口</a>
+						<a class="goto-url2" href="#">二号直播间入口</a>
 					</p>
 				</div>
 			</div>
@@ -174,20 +173,24 @@
 				<div class="horizonl-padder">
 					<div class="frame action" data-animate="flipInX" data-delay="0.8s">
 						<p>揭阳市元合玉翡翠</p>
-						<p>联系电话：<span style="color: #ccc;">13926119895</span></p>
+						<p>联系电话：13926119895</p>
 						<p>地址：揭阳市蓝城区乔南玉器中心大门南侧</p>
-
 					</div>
 				</div>
 			</div>
 		</div>
 
 		<div class="goUp animated slideInUp"><i class="icon iconfont">&#xe629;</i></div>
-
+		
+		<img id="code1" class="hidden" src="img/code1.png"/>
+		<img id="code2" class="hidden" src="img/code2.png"/>
+		
 		<script src="js/jquery-1.11.3.min.js"></script>
-		<script src="js/swiper.min.js"></script>
+		<script src="js/llqrcode.js"></script>
+		<script src="js/analyticCode.js"></script>
 		<script>
 			$(document).ready(function() {
+				
 				setTimeout(function() {
 					//		$(document).scrollTop(0);
 				}, 200);
@@ -206,9 +209,20 @@
 					} else {
 						$('.goUp').fadeOut()
 					}
-				})
-
+				});
+				
+				//js识别二维码
+				var $code1=document.getElementById('code1');
+				var $code2=document.getElementById('code2');
+				
+				getUrl1($code1,'img-url');
+				setTimeout(function(){
+					getUrl2($code2,'img-url')
+				},1000)
+			
 			});
+			
+			
 			//滚动过程中出现动画
 			function showAnimation() { 
 //				return;
@@ -225,6 +239,17 @@
 						}
 					}
 				})
+			}
+			
+			function getUrl1(e,param){
+				analyticCode.getUrl(param,e,function(url1,url2){
+					$('.goto-url1').attr('href',url1);
+				});
+			}
+			function getUrl2(e,param){
+				analyticCode.getUrl(param,e,function(url1,url2){
+					$('.goto-url2').attr('href',url1);
+				});
 			}
 		</script>
 	</body>

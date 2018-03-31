@@ -74,7 +74,8 @@ dl{
 	margin-bottom: 20px;
 }
 *{
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 
@@ -198,7 +199,8 @@ body{
 .para{
 	padding: 5px 5px;background:rgba(34,139,55,0.5); color: #eee;
 	font-weight: bold; text-align: center; 
-	box-shadow: 0 0 10px rgba(255,255,255,0.2);
+	-webkit-box-shadow: 0 0 10px rgba(255,255,255,0.2); 
+	        box-shadow: 0 0 10px rgba(255,255,255,0.2);
 }
 .para.left{
 	border-top-left-radius: 30px;
@@ -296,7 +298,8 @@ body{
     padding: 5px 10px;
     background: rgba(34,139,55,0.4);
     border-radius: 5px;
-    box-shadow: 0 0 5px rgba(255,255,255,0.15) inset;
+    -webkit-box-shadow: 0 0 5px rgba(255,255,255,0.15) inset;
+            box-shadow: 0 0 5px rgba(255,255,255,0.15) inset;
 }
 
 #xxx img{ width: 100%;}

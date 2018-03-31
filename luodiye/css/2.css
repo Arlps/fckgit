@@ -1,0 +1,39 @@
+html{}
+body{
+	background: #0C1F0D;
+	/*background: #619264;*/
+	/*background: url(../img/bg-paper.jpg);*/
+	background-size:cover ;
+	/*background-size: 100% 100%;*/
+}
+
+@media (min-width:400px){
+	body{ 
+		width: 400px; margin: 0 auto;
+	} 
+}
+
+.header{
+	position: relative;
+}.on-live{
+	position: absolute;
+	bottom: 20%; right: 20%;
+	background: rgba(255,255,255,0.2);
+}
+
+.wrap{
+	min-height: 300px;
+}
+.bg-deep{
+	background: #0C1F0D;
+}
+.bg-light{
+	background: #F6F2EC;
+}
+.btn{
+	text-align: center; font-size: 14px;color: #ccc;
+	border-radius: 10px; padding: 7px 10px;font-weight: bold;
+}
+.iconfont{
+	vertical-align: top;
+}
