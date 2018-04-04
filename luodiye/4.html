@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="format-detection" content="telephone=no" />  
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<title>元合玉翡翠直播</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/fonts/iconfont.css" />
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" href="css/3.css" />
+		<style>
+			body{
+				position: relative;
+			}
+			.btn{
+				position: absolute; background: #ff0; display: inline-block;
+				width: 100px; height: 100px;opacity: 0;
+			}
+			#btn1{
+			    top: 12.7%;
+			    right: 17%;
+			    width: 25%;
+			    height: 1%;
+			}
+			#btn2{
+				bottom: 6%;
+			    right: 8%;
+			    width: 27%;
+			    height: 1.2%;
+			}
+			#btn3{
+				bottom: 3.8%;
+			    right: 8%;
+			    width: 27%;
+			    height: 1.2%;
+			}
+		</style>
+	</head>
+	<body>
+		<img id="all" src="4/4.jpg" width="100%"/>
+		<a href="http://www.dwntme.com/h.ZZX7m2g?cv=Trqc0P9fhN3&amp;sm=afbcab" class="btn" id="btn1"></a>
+		<a href="http://www.dwntme.com/h.ZZX7m2g?cv=Trqc0P9fhN3&amp;sm=afbcab" class="btn" id="btn2"></a>
+		<a href="http://m.tb.cn/h.WvIZ14H" class="btn" id="btn3"></a>
+		<div class="goUp animated slideInUp"><i class="icon iconfont">&#xe629;</i></div>
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script>
+//			$('#all').show().siblings().hide()
+			$(function(){
+//				return;
+//				showAnimation();
+				
+				$('.goUp').click(function() {
+					$('html,body').animate({
+						scrollTop: 0
+					}, 500)
+				})
+				
+				$(window).scroll(function() {
+//					showAnimation()
+					if($(window).scrollTop() >= 100) {
+						$('.goUp').fadeIn()
+					} else {
+						$('.goUp').fadeOut()
+					}
+				});
+				
+				
+			})
+			
+			function showAnimation() { 
+				$('.action').each(function(idx, ele) {
+					if($(this).offset().top <= $(document).scrollTop() + $(window).height()) {
+						$(this).css({
+							opacity: 1
+						})
+						var animate = $(this).data('animate');
+						var delay = $(this).data('delay');
+						$(this).addClass('animated ' + animate);
+						if(delay) {
+							$(this).css('animation-delay', delay)
+						}
+					}
+				})
+			}
+		</script>
+	</body>
+</html>

@@ -1,15 +1,19 @@
-html{}
+html{ overflow-x: hidden;}
 body{
-	background: #0C1F0D;
+	/*background: #0C1F0D;*/
 	/*background: #619264;*/
 	/*background: url(../img/bg-paper.jpg);*/
-	background-size:cover ;
+	/*background-size:cover ;*/
 	/*background-size: 100% 100%;*/
+	
+	background: url(../2/bg-light.png) repeat-y ;
+	background-size: 100% auto;
+	/*min-height: 10000px;*/
 }
 
-@media (min-width:400px){
+@media (min-width:500px){
 	body{ 
-		width: 400px; margin: 0 auto;
+		width: 500px; margin: 0 auto;
 	} 
 }
 
@@ -17,23 +21,154 @@ body{
 	position: relative;
 }.on-live{
 	position: absolute;
-	bottom: 20%; right: 20%;
+	bottom: 30%; right: 20%;
 	background: rgba(255,255,255,0.2);
 }
 
-.wrap{
-	min-height: 300px;
+/*淘宝直播#################*/
+.live .image{
+	width: 90%; margin: 0 5%; margin-top: 20px;
 }
-.bg-deep{
-	background: #0C1F0D;
+
+/*公司简介####################*/
+ul.company-list li{
+	position: relative;padding: 10px 0;
 }
-.bg-light{
-	background: #F6F2EC;
+ul.company-list li .image{
+	z-index: 1; width: 60%; margin-left: 10px;
+}
+ul.company-list li .intro{
+	position: absolute;
+	background: rgba(29,130,71,0.5);
+	width:auto; right: 5%;
+	z-index: 2;
+	box-shadow: 1px 1px 12px rgba(0,0,0,0.3);
+    color: #fff; padding: 10px 5px;
+    height: 120px;
+    top: 50%;
+    margin-top: -60px;
+    font-size: 13px;
+}
+ul.company-list li .intro h3{
+	font-size: 20px; line-height: 40px; font-weight: bold;
+	background: url(../2/h3-bg.png) left center no-repeat;
+}
+ul.company-list li:nth-child(even) .intro{
+	position: static; margin-top: 0; padding-left: 10px;
+	width: 100%;
+}
+ul.company-list li:nth-child(even) .intro .txt{
+	position: relative; z-index: 1;
+}
+ul.company-list li:nth-child(even) .image{
+	position: absolute; bottom: 7px; right: 10px;
+	width: 30%;
+}
+ul.company-list li:nth-child(even) .intro h3{
+	background: url(../2/h3-bg.png) 40% center no-repeat;
+}
+
+/*淘宝店铺####################*/
+ul.store-list li{
+	margin-bottom: 10px;
+}
+ul.store-list li .image{
+	width: 100%;
+}
+
+/*联系方式################*/
+.link .image{
+	width: 150px; margin: 0 auto;display: block;
+}
+.link .btn-group{
+	text-align: center; line-height: 50px;
+	
+}
+.link .btn{
+	background: rgba(29,130,71,0.5); color: #fff;
+	margin: 0 5px;
+}
+
+
+.goUp{
+	position: fixed; right: 10px; bottom: 20px; 
+	width: 30px; height: 30px; line-height: 26px;
+	text-align: center; background: rgba(0,0,0,0.2);
+	color: #fff; font-size: 26px;z-index:1000; 
+	display: none;
+}
+
+
+
+
+
+/*辅助=========================================*/
+.action{
+	opacity: 0;
 }
 .btn{
 	text-align: center; font-size: 14px;color: #ccc;
 	border-radius: 10px; padding: 7px 10px;font-weight: bold;
+	background:rgba(255,255,255,0.2)
 }
 .iconfont{
 	vertical-align: top;
+}
+.box{
+	padding: 20px 0;
+}
+.para{
+	text-align: center;    
+	font-size: 14px;
+    line-height: 25px;
+    color: #666;
+}
+.txt{
+	font-size: 14px;
+    line-height: 25px;
+}
+.right{
+	text-align: right;
+}
+.left{
+	text-align: left;
+}
+.title{
+	display: inline-block;
+    margin: 0 10%;
+    background: url(../2/title-bg.png) no-repeat center center;
+    background-size: 80%;
+    height: 100px;
+    width: 80%;
+    text-align: center;
+    color: #fff;
+}
+.title dt{
+	line-height: 30px;
+    font-size: 22px;
+    margin-top: 23px;
+}
+.title dd{
+	font-size: 14px;
+    line-height: 20px;
+}
+.padder{
+	padding: 0 10px;
+}
+.indent{
+	text-indent: 28px;
+}
+.frame{
+	background: url(../2/frame.png);
+	background-size: 100% 100%;
+	font-size: 14px;
+    line-height: 28px;
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+.bg-deep{
+	background: url(../2/bg-deep.png) repeat-y ;
+	background-size: 100% auto;
 }
