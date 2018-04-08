@@ -1,0 +1,13 @@
+.more{
+	position: fixed; right: 5px; 
+	width: 30px; height: 30px; line-height: 22px;
+	text-align: center; background: rgba(0,0,0,0.2);
+	color: #fff; font-size: 26px;z-index:1000; 
+	box-shadow: 0 0 4px rgba(255,255,255,0.4);
+}
+.more.goUp{
+	bottom:60px; display: none;
+}
+.more.jump{
+	bottom: 20px;
+}
