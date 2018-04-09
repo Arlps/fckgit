@@ -1,5 +1,5 @@
 @media (min-width:500px){
-	html{ 
+	body{ 
 		width: 500px; margin: 0 auto;
 	} 
 }
@@ -21,26 +21,6 @@
 	bottom: 20px;
 }
 
-body{
-	background: url(../4/bg.png) repeat-y;
-	background-size: 100% auto;
-	/*min-height: 4000px;*/
-}
-.banner{
-	position: relative;
-}
-.banner .top-link{
-	position: absolute;display: inline-block;
-	bottom: 11%; right: 1%;
-	width: 47%; height: 12%;
-	background: url(../4/top-link.png);
-	background-size: 100% 100%;
-}
-
-
-
-
-
 .footer{
 	height: 235px; padding: 35px 20px; box-sizing: border-box;
 	background: url(../introduce/pic8.png);background-size: 100% 100%;
@@ -61,16 +41,6 @@ body{
 	}
 }
 
-.bottom-link{
-	display: inline-block; width: 150px; height: 65px;
-	background-size: 100% 100%; margin-top: 8%;
-}
-.bottom-link.btn1{
-	background-image:url(../4/bottom-link1.png);
-}
-.bottom-link.btn2{
-	background-image:url(../4/bottom-link2.png);
-}
 
 
 
@@ -156,9 +126,6 @@ body{
 .full-img{
 	width: 100%; margin: 10px 0;
 }
-.lg-img{
-	width: 90%; margin-left: 5%;
-}
 .yellow{
 	color:#F3C151; font-weight: bold;
 }
@@ -168,17 +135,4 @@ body{
 }
 .no-margin{
 	margin: 0;
-}
-.clearfix{
-	overflow: hidden;
-}
-
-.txt-left{
-	text-align: left;
-}
-.txt-center{
-	text-align: center;
-}
-.txt-right{
-	text-align: right;
 }
