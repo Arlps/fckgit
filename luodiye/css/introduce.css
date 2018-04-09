@@ -4,21 +4,26 @@
 	} 
 }
 .more{
-	position: fixed; right: 5px; 
-	width: 30px; height: 30px; line-height: 30px;
+	position: fixed; right: 10px; 
+	width: 44px; height: 44px; line-height: 44px;
 	text-align: center; background: rgba(0,0,0,0.3);
 	color: #fff; font-size: 26px;z-index:1000; 
 	box-shadow: 0 0 4px rgba(255,255,255,0.4);
 	cursor: pointer;
 }
 .more i{
-	font-size:20px;
+	font-size:22px;
 }
 .more.goUp{
-	bottom:60px; display: none;
+	bottom:65px; display: none;
 }
 .more.jump{
 	bottom: 20px;
+	background: rgba(23,117,8,0.4);
+	font-size: 10px;
+	line-height: 16px;
+	box-sizing: border-box;
+	padding: 5px;
 }
 
 .footer{
@@ -50,7 +55,7 @@
 
 /*辅助=========================================*/
 .action{
-	opacity: 0;
+	/*opacity: 0;*/
 }
 .hidden{
 	display: none;
