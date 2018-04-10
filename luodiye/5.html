@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="format-detection" content="telephone=no" />  
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<title>元合玉翡翠直播</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/fonts/iconfont.css" />
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" href="css/4.css"/>
+	</head>
+	<body>
+		<img id="all" class="jump" src="5/5.jpg" width="100%"/>
+	
+		<a class="more jump animated slideInUp" href="introduce.html" title="更多">查看<br />更多<i class="icon iconfont hidden">&#xe654;</i></a>
+		<div class="more goUp animated slideInUp" title="回到顶部"><i class="icon iconfont">&#xe629;</i></div>
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script>
+			$('。jump').show().siblings().hide()
+			$(function(){
+//				return;
+//				showAnimation();
+				
+				$('.goUp').click(function() {
+					$('html,body').animate({
+						scrollTop: 0
+					}, 500)
+				})
+				
+				$(window).scroll(function() {
+//					showAnimation()
+					if($(window).scrollTop() >= 100) {
+						$('.goUp').fadeIn()
+					} else {
+						$('.goUp').fadeOut()
+					}
+				});
+				
+				
+			})
+			
+			function showAnimation() { 
+				$('.action').each(function(idx, ele) {
+					if($(this).offset().top <= $(document).scrollTop() + $(window).height()-20) {
+						$(this).css({
+							opacity: 1
+						})
+						var animate = $(this).data('animate');
+						var delay = $(this).data('delay');
+						$(this).addClass('animated ' + animate);
+						if(delay) {
+							$(this).css('animation-delay', delay)
+						}
+					}
+				})
+			}
+		</script>
+	</body>
+</html>
