@@ -35,7 +35,6 @@
 			    width: 27%;
 			    height: 1.2%;
 			}
-
 		</style>
 	</head>
 	<body>
@@ -48,7 +47,7 @@
 			<img src="4/banner.png" class="full-img action" data-animate="fadeIn" data-delay="0s" alt="" />
 			<a href="http://www.dwntme.com/h.ZZX7m2g?cv=Trqc0P9fhN3&amp;sm=afbcab" class="top-link action" data-animate="slideInRight" data-delay="0s"></a>
 		</div>
-		<div class="box">
+		<div class="box" style="padding-top: 0;">
 			<img src="4/intro.png" class="lg-img action" data-animate="slideInUp" data-delay="0s" alt="" />
 		</div>
 		<div class="box">
@@ -99,7 +98,6 @@
 				<p class="action" data-animate="fadeInRight" data-delay="0.2s">上万好货 每天不重复直播</p>
 			</div>
 		</div>
-		
 		<p class="btn-more-wrap hidden">
 			<a href="introduce.html" class="btn-more">查看更多</a>
 		</p>
@@ -133,7 +131,7 @@
 			
 			function showAnimation() { 
 				$('.action').each(function(idx, ele) {
-					if($(this).offset().top <= $(document).scrollTop() + $(window).height()-70) {
+					if($(this).offset().top <= $(document).scrollTop() + $(window).height()-20) {
 						$(this).css({
 							opacity: 1
 						})
