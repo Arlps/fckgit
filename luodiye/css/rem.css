@@ -37,7 +37,7 @@ ul.method>li{
 
 
 
-@media only screen and (min-width: 375px) {
+/*@media only screen and (min-width: 375px) {
 	.code{
 		width: 150px;
 	}
@@ -46,13 +46,33 @@ ul.method>li{
 	.code{
 		width: 100%;
 	}
+}*/
+.footer{
+	padding: 0.5rem 0.3rem;
+}
+.title{
+    background: url(../introduce/title.png) no-repeat center center;
+    background-size: 100% 100%;
+    text-align: center;
+    color: #666;
+    font-size: 20px;
+    /*font-style: italic;*/
+    font-weight: bold;
+    margin: 0 auto;
+    /*padding: 15px 25px;*/
+    display: inline-block;
+    width: 2.7rem;
+    height: 1rem;
+    line-height: 1rem;
+    font-size: 0.4rem;
 }
 
-
-
-
-
-
+.code{
+	width: 3rem; height: 3rem;
+}
+.code-txt{
+	font-size: 0.24rem!important;
+}
 
 
 /*辅助=========================================*/
@@ -107,17 +127,7 @@ ul.method>li{
 .box{
 	text-align: center; padding: 20px 10px 10px;
 }
-.title{
-    background: url(../introduce/title.png) no-repeat center center;
-    background-size: 100% 100%;
-    text-align: center;
-    color: #666;
-    font-size: 20px;
-    /*font-style: italic;*/
-    font-weight: bold;
-    margin: 0 auto;
-    padding: 15px 25px;display: inline-block;
-}
+
 .padder{
 	padding: 0 10px;
 }

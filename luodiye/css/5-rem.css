@@ -1,0 +1,314 @@
+@media (min-width:500px){
+	html{ 
+		width: 500px; margin: 0 auto;
+	} 
+}
+.more{
+	position: fixed; right: 5px; 
+	width: 44px; height: 44px; line-height: 44px;
+	text-align: center; background: rgba(0,0,0,0.3);
+	color: #fff;z-index:1000; 
+	box-shadow: 0 0 4px rgba(255,255,255,0.4);
+	cursor: pointer;
+}
+.more i{
+	font-size:22px;
+}
+.more.goUp{
+	bottom:67px; display: none;
+	/*background: rgba(23,117,8,0.4);*/
+}
+.more.jump{
+	bottom: 20px;
+	background: rgba(23,117,8,0.4);
+	font-size: 10px;
+	line-height: 16px;
+	box-sizing: border-box;
+	padding: 5px;
+}
+
+body{
+	background: #fff;
+	/*min-height: 4000px;*/
+}
+.btn{
+	position: absolute;
+	display: inline-block;
+	background-size: 100% 100%; 
+}
+.eng{
+	color: #acacac; font-size: 0.55rem;
+	line-height: 0.6rem; font-family: FangSong;
+	letter-spacing: 0.07rem;
+}
+.chn{
+	color: #555555; font-size: 0.46rem;
+	margin-bottom: 0.3rem; font-weight: bold;
+	letter-spacing: 0.07rem;
+}
+.detail{
+	color: #666666; font-size: 0.26rem;
+	line-height: 0.4rem;letter-spacing: 0.03rem;
+}
+.para{ 
+	font-size: 0.26rem;
+	line-height: 0.35rem;
+    color: #666;
+    text-align: left;
+    
+}
+
+
+.banner{
+	position: relative;
+}
+.top-btn{
+	background-image: url(../5/top-btn.png);
+	width: 3.55rem; height: 1rem;
+    bottom: 0.5rem; left: 50%; margin-left: -1.77rem;
+}
+.banner img{ margin: 0;}
+
+.intro{
+	position: relative;
+	height: 5.6rem;padding-left: 0.3rem;
+	background: url(../5/flower.png) center center;
+	background-size: 98% auto;
+}
+.intro .mirror{
+	position: absolute; 
+	width: 3.3rem;right: 0.2rem; top: 1rem;
+}
+.intro .info{
+	padding-top: 1rem;
+}
+
+.jade{
+	position: relative;
+	height: 5.6rem; background: url(../5/feicui-bg.png);
+	background-size: 100% 100%;
+}
+.jade img{
+	position: absolute;
+	width: 1.5rem; top: 1rem; left: 1.2rem;
+}
+.jade .info{
+	display: inline-block;
+	margin-top: 1.2rem; margin-left: 3.6rem;
+}
+.jade .info .chn{ 
+	color: #00AB75; font-weight: normal;
+}
+.jade .info .eng{
+	color: #eee;
+}
+.jade .info .detail{
+	color: #ddd;
+}
+
+.lace{
+	height: 5.4rem; background: url(../5/lace.png) center center no-repeat;
+	background-size: 70% auto;
+}
+.lace .head{
+	height: 0.85rem; margin-top: 0.55rem;
+	background: url(../5/lace-eng.png) center center no-repeat;
+	background-size: auto 100%;
+}
+.lace .title{
+	height: 0.95rem; line-height: 0.95rem; font-size: 0.63rem;
+	text-align: center; font-family: simsun; color: #444;
+}
+.lace .para{
+	padding: 0 0.6rem; font-size: 0.26rem; line-height: 0.35rem;
+}
+
+.card-list{
+	padding: 0 0.2rem;
+}
+.card-list img{ 
+	width: 100%;margin-bottom: 0.5rem;margin-top: 0.2rem;
+}
+.card-title{
+	width: 4rem; height: 1rem;border: 1px solid #aaa;
+	position: relative; text-align: center; margin: 0 auto;
+	margin-bottom: 0.6rem;
+}
+.card-title .eng{
+	line-height: 0.8rem;
+}
+.card-title .chn{
+	position: absolute; width: 2.5rem;height: 0.5rem;
+	top: 0.8rem; left: 50%; margin-left: -1.25rem;
+	background: #fff;
+}
+
+
+.store-list{
+	padding: 0 0.2rem;
+}
+.store-list li{
+	position: relative;
+}
+.store-list .single{
+	position: absolute;
+	width: 1.6rem; top: 0.4rem; left: 0.4rem;
+}
+.store-list .info{
+	margin-left: 2.3rem;
+}.store-list .cut{
+	width: 100%; 
+	margin-top: 0.3rem; margin-bottom: 0.3rem;
+}
+
+.footer{
+	position: relative;height: 5.6rem;
+	background: url(../5/foot-bg.png);
+	background-size: 100% 100%;
+	margin-top: 2rem;
+}
+.footer img{
+	position: absolute; width: 3.5rem; height: 3.5rem;
+	top:-1.75rem;left: 50%; margin-left: -1.75rem; 
+}
+.footer .detail{
+	padding-top: 2rem; text-align: center; color: #ddd;
+	line-height: 0.6rem; font-size: 0.3rem;
+}
+.footer .btn{
+	width: 2.5rem; height: 0.7rem;
+}
+
+.btn-more-wrap{
+	text-align: center;
+}
+.btn-more{
+	padding: 5px 10px;
+	border-radius: 5px; color: #fff;
+	display: inline-block;
+	font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
+.bottom-btn1{
+	background-image: url(../5/bottom-btn1.png);
+	width: 36%; height: 9.3%;
+    bottom: 14%; left: 12%;
+}
+.bottom-btn2{
+	background-image: url(../5/bottom-btn2.png);
+	width: 36%; height: 9.3%;
+    bottom: 14%; right: 12%;
+}
+
+
+.full-img.pic1{
+	width: 96%; margin-left: 3%; 
+}
+.full-img.pic3{
+	width: 84%; margin-left: 8%;
+}
+.full-img.pic8,.full-img.pic9{
+	width: 96%; margin-left: 2%; margin-bottom: 20px;
+}
+.full-img.pic11{
+	margin-bottom: 0; margin-top: 30px;
+}
+
+.show-list{
+	padding: 0 10px;
+}
+
+
+
+/*辅助=========================================*/
+.action{
+	opacity: 0;
+}
+.hidden{
+	display: none;
+}
+/*.btn{
+	text-align: center; font-size: 14px;color: #ccc;
+	border-radius: 10px; padding: 7px 10px;font-weight: bold;
+	background:rgba(255,255,255,0.2)
+}*/
+.iconfont{
+	vertical-align: top;
+}
+.frame{
+	background: url(../3/frame.png);
+	background-size: 100% 100%;
+	font-size: 14px;
+    line-height: 28px;
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+.frame p{
+	text-align: center;
+}
+
+.no-bg{
+	background: none; color: #666;
+}
+.txt{
+	font-size: 14px;
+    line-height: 25px;
+}
+.right{
+	text-align: right;
+}
+.left{
+	text-align: left;
+}
+.box{
+	text-align: center; padding: 20px 10px 10px;
+}
+
+.padder{
+	padding: 0 10px;
+}
+.indent{
+	text-indent: 28px;
+}
+
+.bg-deep{
+	background: url(../2/bg-deep.png) repeat-y ;
+	background-size: 100% auto;
+}
+.fff{ color: #ccc;}
+.full-img{
+	width: 100%; margin: 10px 0;
+}
+.lg-img{
+	width: 90%; margin-left: 5%;
+}
+.yellow{
+	color:#F3C151; font-weight: bold;
+}
+.half{
+	display: inline-block; width: 50%; float: left;
+	padding: 5px; box-sizing: border-box;
+}
+.no-margin{
+	margin: 0;
+}
+.clearfix{
+	overflow: hidden;
+}
+
+.txt-left{
+	text-align: left;
+}
+.txt-center{
+	text-align: center;
+}
+.txt-right{
+	text-align: right;
+}
+.pos{
+	position: relative;
+}
