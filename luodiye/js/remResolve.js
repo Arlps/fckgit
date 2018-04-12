@@ -1,6 +1,13 @@
 (function (window) {
     function changeFontSize() {
-        var orginHtmlFontSize = document.documentElement.clientWidth / 7.5
+    	if(document.documentElement.clientWidth<=500){
+    		var orginHtmlFontSize = document.documentElement.clientWidth / 7.5
+    	}else{
+    		var orginHtmlFontSize = 500 / 7.5
+    	}
+        
+//      orginHtmlFontSize=50;
+        
         var newHtmlFontSize = orginHtmlFontSize
         // if (orginHtmlFontSize > 100) {
         //     // newHtmlFontSize = 70
