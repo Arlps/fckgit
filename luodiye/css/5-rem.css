@@ -120,7 +120,7 @@ body{
 	text-align: center; font-family: simsun; color: #444;
 }
 .lace .para{
-	padding: 0 0.6rem;
+	padding: 0 0.6rem; background: rgba(255,255,255,0.6);
 }
 
 .card-list{
