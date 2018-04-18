@@ -17,7 +17,7 @@
 			<div class="banner pos">
 				<div class="top"> 
 					<div class="heat action" data-animate="fadeInLeft">
-						<span>人气值</span>&nbsp;<span class="heat-num">2471132</span>
+						<span>人气值</span>&nbsp;<span class="heat-num clock">2471132</span>
 					</div>
 					<div class="fans action" data-animate="fadeInRight">
 						<img src="7/fans.png" />
@@ -25,7 +25,7 @@
 				</div>
 				<img src="7/banner-title.png" class="banner-title" data-animate="zoomIn"/>
 				<img src="7/banner-jade.png" class="banner-jade action" data-animate="fadeIn" />
-				<a href="#" class="banner-btn action infinite" data-animate="pulse"></a>
+				<a href="http://www.dwntme.com/h.ZZX7m2g?cv=Trqc0P9fhN3&amp;sm=afbcab" class="banner-btn action infinite" data-animate="pulse"></a>
 				<img src="7/banner-up.png" class="banner-up animated fadeInUp infinite"/>
 			</div>
 
@@ -265,10 +265,11 @@
 			<script src="js/jquery.lazyload.min.js"></script>
 			<script src="js/jquery.easing.min.js"></script>
 			<script>
+	
 				$(function() {
 					$("img.lazy").lazyload({
-						placeholder: "img/grey.gif", //用图片提前占位
-						threshold: 00
+						placeholder: "7/x.png", //用图片提前占位
+						threshold: 50
 					});
 					
 					//数字递增
@@ -289,19 +290,19 @@
 						}
 					});
 					
-					//'头像出现
-//					var $fans=$('.fans img');
-//					$fans.css({position:'absolute'}).parent().css({position:'relative'})
-//					var right=-200;
-//					var timer=setInterval(function(){
-//						if(right>=-30){
-//							clearInterval(timer);
-//						}
-//						right+=30;
-//						$fans.animate({
-//							right:right
-//						},100)
-//					},100)
+					//头像出现
+					var $fans=$('.fans img');
+					$fans.css({position:'absolute',right:"-3.8rem"}).parent().css({position:'relative'})
+					var right=-3.8;
+
+					var timer=setInterval(function(){
+						
+						right+=0.5;
+						$fans.css({
+							right:right+'rem'
+						})
+						if(right>0){clearInterval(timer)}
+					},150)
 					
 					
 					
@@ -331,7 +332,7 @@
 				function showAnimation() {
 //					return;
 					$('.action').each(function(idx, ele) {
-						if($(this).offset().top <= $(document).scrollTop() + $(window).height() - 100) {
+						if($(this).offset().top <= $(document).scrollTop() + $(window).height() - 50) {
 							$(this).css({
 								opacity: 1
 							})

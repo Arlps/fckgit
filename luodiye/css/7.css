@@ -4,6 +4,12 @@
 	src: url('fonts/fonts/Didot.ttf'); /*url('Sansation_Bold.eot');*/
 	font-weight: lighter;
 }
+@font-face
+{
+	font-family: Clock;
+	src: url('fonts/fonts/DIGITAL-Regular.ttf'); /*url('Sansation_Bold.eot');*/
+	font-weight: lighter;
+}
 @media (min-width:500px){
 	html{ 
 		width: 500px; margin: 0 auto;
@@ -13,7 +19,7 @@
 	box-sizing: border-box;
 }
 html{
-	overflow-x: hidden;
+	overflow-x: hidden; 
 }
 body{
 	background-color: #131F41;
@@ -23,6 +29,11 @@ body{
 }
 .didot{
 	font-family: Didot;
+}
+.clock{
+	font-family: Clock;
+	/*font-size: 0.45rem;*/
+    letter-spacing: 0.02rem;
 }
 
 /*banner=====================================*/
@@ -39,39 +50,42 @@ body{
 	line-height: 0.8rem; font-size: 0.3rem; color: #fff;
 	background: url(../7/num-bg.png);
 	background-size: 100% 100%;
-	padding-left: 0.15rem;
+	padding: 0 0.15rem;
+}
+.top .heat .heat-num{
+	float: right;
 }
 .top .fans{
 	height: 0.8rem; float: right;
-	padding-right: 0.15rem;
+	padding-right: 0.15rem; 
 }
 .top .fans img{
-	height: 0.7rem; margin-top: 0.05rem;
+	height: 0.7rem; margin-top: 0.05rem;transition: all 0.1s;
 }
 .banner-title{
-	position:absolute; width: 1.86rem;
-	left:1.9rem; top: 3.65rem;
+	position:absolute; width: 3.77rem;
+	left:0rem; top: 1.3rem;
 }
 .banner-jade{
 	position: absolute; top: 4.5rem; right: 0.5rem;
 	width: 4.47rem; height: 5.79rem;
 }
 .banner-btn{
-	position: absolute;top: 10.5rem;left: 50%;
+	position: absolute;top: 10rem;left: 50%;
 	width: 3.2rem; height: 1.5rem; margin-left: -1.6rem;
 	background: url(../7/banner-btn.png);
 	background-size: 100% 100%;
 	display: inline-block;
 }
 .banner-up{
-	position: absolute; top: 12rem;
+	position: absolute; top: 11.5rem;
 	width: 0.6rem; left: 50%; margin-left: -0.3rem;
 }
 
 /*live===============================*/
 .live{
 	position: relative;
-	height: 3.1rem; margin-top: -0.5rem;
+	height: 3.1rem; margin-top: -1rem;
 	background: url(../7/live-bg.png);
 	background-size: 100% 100%;
 }
@@ -117,7 +131,7 @@ body{
 	margin-bottom: 0.35rem;
 }
 .detail{
-	text-align: center;
+	text-align: center;margin-bottom: 0.2rem;
 	font-size: 0.26rem; line-height: 0.4rem; color: #eee;
 }
 
@@ -133,9 +147,9 @@ body{
 	margin-bottom: 0.5rem;
 }
 .sec-title{
-	width: 4rem; height: 1.3rem; margin: 0 auto; padding-top: 0.36rem;
+	width: 4.5rem; height: 1.3rem; margin: 0 auto; padding-top: 0.36rem;
 	color: #0efdc9; color: #34e9c4; margin-bottom: 0.3rem;
-	background: url(../7/second-title.png) left center no-repeat;
+	background: url(../7/second-title.png) 20px center no-repeat;
 	background-size: auto 100%;
 	
 }
