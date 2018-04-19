@@ -1,3 +1,12 @@
+@font-face
+{
+	font-family: Didot;
+	src: url('fonts/fonts/Didot.ttf'); /*url('Sansation_Bold.eot');*/
+	font-weight: lighter;
+}
+.didot{
+	font-family: Didot;
+}
 @media (min-width:500px){
 	html{ 
 		width: 500px; margin: 0 auto;
@@ -26,7 +35,9 @@
 	box-sizing: border-box;
 	padding: 5px;
 }
-
+*{
+	box-sizing: border-box;
+}
 body{
 	background: #fff;
 	/*min-height: 4000px;*/
@@ -37,8 +48,8 @@ body{
 }
 .eng{
 	color: #acacac; font-size: 0.55rem;
-	line-height: 0.6rem; font-family: FangSong;
-	letter-spacing: 0.07rem;
+	line-height: 0.6rem; font-family: Didot;
+	/*letter-spacing: 0.07rem;*/
 }
 .chn{
 	color: #555555; font-size: 0.46rem;
@@ -108,19 +119,19 @@ body{
 
 .lace{
 	height: 5.4rem; background: url(../5/lace.png) center center no-repeat;
-	background-size: 70% auto;
+	background-size: 100% 100%; padding-top: 1.15rem;
 }
 .lace .head{
 	height: 0.85rem; margin-top: 0.55rem;
 	background: url(../5/lace-eng.png) center center no-repeat;
 	background-size: auto 100%;
 }
-.lace .title{
-	height: 0.95rem; line-height: 0.95rem; font-size: 0.63rem;
-	text-align: center; font-family: simsun; color: #444;
+.lace .lace-title{
+	height: 1.1rem; line-height: 4.8rem; display: block;
+	margin: 0 auto; margin-bottom: 0.2rem;
 }
 .lace .para{
-	padding: 0 0.6rem; background: rgba(255,255,255,0.6);
+	padding: 0 0.6rem;
 }
 
 .card-list{
@@ -145,21 +156,59 @@ body{
 
 
 .store-list{
-	padding: 0 0.2rem;
+	padding: 0 0.2rem; margin-top: 0.7rem;
 }
 .store-list li{
-	position: relative;
-}
-.store-list .single{
-	position: absolute;
-	width: 1.6rem; top: 0.4rem; left: 0.4rem;
+	position: relative; margin-bottom: 0.4rem;
 }
 .store-list .info{
-	margin-left: 2.3rem;
+	/*margin-left: 15%;*/
 }
 .store-list .cut{
 	width: 100%; 
 	margin-top: 0.3rem; margin-bottom: 0.3rem;
+}
+.list-title{
+	font-size: 0.48rem; margin-bottom: 0.3rem;
+}
+.list-title .first{
+	font-size: 0.6rem;
+}
+
+.store{
+	background: url(../5/store-bg.png) left top no-repeat;
+	background-size: 12% auto;
+	padding-left: 15%;
+}
+.store .line{
+	height: 0.02rem;
+	background: url(../5/line.png) right bottom no-repeat;
+}
+.comment{
+	background: url(../5/comment-bg.png) right top no-repeat;
+	background-size: 12% auto;
+	padding-right: 15%;
+}
+.comment .info{
+	padding-left: 0.7rem;
+}
+.comment .line{
+	height: 0.02rem;
+	background: url(../5/line.png) left bottom no-repeat;
+}
+
+.service{
+	padding: 0 0.2rem; padding-bottom: 0.8rem;
+}
+.service .half{
+	width: 50%; float: left; text-align: center;
+}
+.service dt{
+	font-size: 0.36rem; color: #333; margin-bottom: 0.2rem;
+	font-weight: bold;
+}
+.service dd{
+	font-size: 0.28rem; color: #666; line-height: 0.36rem;
 }
 
 .footer{
