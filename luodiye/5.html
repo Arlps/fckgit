@@ -12,30 +12,33 @@
 	</head>
 	<body>
 		<img id="all" class="jump hidden" src="5/5.jpg" width="100%"/>
-		 
 		 <div class="banner pos">
 		 	<img src="5/banner.png" class="full-img"/>
-		 	<a href="http://www.dwntme.com/h.ZZX7m2g?cv=Trqc0P9fhN3&amp;sm=afbcab" class="btn top-btn"></a>
+		 	<a href="http://www.dwntme.com/h.ZZX7m2g?cv=Trqc0P9fhN3&amp;sm=afbcab" class="btn top-btn action" data-animate="zoomIn"></a>
 		 </div>
 		<img src="5/pic1.png" class="full-img pic1" alt="" />
 		<img src="5/pic2.png" class="full-img" alt="" />
 		<img src="5/pic3.png" class="full-img pic3" alt="" />
-		
-		<img src="5/pic4.png" class="full-img" alt="" />
-		<img src="5/pic5.png" class="full-img" alt="" />
-		<img src="5/pic6.png" class="full-img" alt="" />
+		<ul class="show-list">
+			<li>
+				<img src="5/pic4.png" class="full-img" alt="" />
+			</li>
+			<li>
+				<img src="5/pic5.png" class="full-img" alt="" />
+			</li>
+			<li>
+				<img src="5/pic6.png" class="full-img" alt="" />
+			</li>
+		</ul>
 		<img src="5/pic7.png" class="full-img" alt="" />
 		<img src="5/pic8.png" class="full-img pic8" alt="" />
 		<img src="5/pic9.png" class="full-img pic9" alt="" />
 		<img src="5/pic10.png" class="full-img" alt="" />
 		<div class="footer pos">
 			<img src="5/pic11.png" class="full-img pic11" alt="" />
-			<a href="http://www.dwntme.com/h.ZZX7m2g?cv=Trqc0P9fhN3&amp;sm=afbcab" class="btn bottom-btn1"></a>
-			<a href="http://m.tb.cn/h.WvIZ14H" class="btn bottom-btn2"></a>
+			<a href="http://www.dwntme.com/h.ZZX7m2g?cv=Trqc0P9fhN3&amp;sm=afbcab" class="btn bottom-btn1 action" data-animate="slideInLeft"></a>
+			<a href="http://m.tb.cn/h.WvIZ14H" class="btn bottom-btn2 action" data-animate="slideInRight"></a>
 		</div>
-		
-		
-	
 		<a class="more jump animated slideInUp" href="introduce.html" title="更多">查看<br />更多<i class="icon iconfont hidden">&#xe654;</i></a>
 		<div class="more goUp animated slideInUp" title="回到顶部"><i class="icon iconfont">&#xe629;</i></div>
 		<script src="js/jquery-1.11.3.min.js"></script>
@@ -43,7 +46,7 @@
 //			$('。jump').show().siblings().hide()
 			$(function(){
 //				return;
-//				showAnimation();
+				showAnimation();
 				
 				$('.goUp').click(function() {
 					$('html,body').animate({
@@ -52,7 +55,7 @@
 				})
 				
 				$(window).scroll(function() {
-//					showAnimation()
+					showAnimation()
 					if($(window).scrollTop() >= 100) {
 						$('.goUp').fadeIn()
 					} else {
